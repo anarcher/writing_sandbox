@@ -9,4 +9,5 @@ urlpatterns = patterns(
     url(r'^$', 'quiz.views.home_page', name='home'),
     url(r'^sets/(.*)/learn$', 'quiz.views.learn_page', name='learn'),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^accounts/', include('allauth.urls')),
 )
